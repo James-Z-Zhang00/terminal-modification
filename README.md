@@ -5,7 +5,7 @@ The bash terminal custom and self-developed commands to simplify daily use
 ## File Information
 
 - .bashrc             to make terminal default display the current file path (location) and time, with user defined color, font and weight
-- .bash_profile       the file that will be executed at the beginning of the terminal, import several terminal customization, alias and bash scripts
+- .bash_profile       the file that will be executed at the beginning of the terminal, import several terminal customization, alias and bash scripts, define paths
 - .bashtp             the shell scripts for my grading task, to simplify the operation and the next step is to automate the process
 - .bashalias          self-developed command alias to speed up when entering bash commands
 
