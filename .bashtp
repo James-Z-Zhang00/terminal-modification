@@ -1,0 +1,57 @@
+echo "$(tput setaf 9)USING .bashtp$(tput sgr0)"
+alias mvmr="unzip *.zip -d curr_marking"
+# move marking materials
+alias clmr="rm -r curr_marking/*"
+# clean marking materials
+alias fmr="mv *.zip marked/"
+# move downloaded materials to marked folder
+# open files quicker
+alias o="open"
+alias o.="open ."
+alias o..="open .."
+# for new root folders
+alias algo="cd ~/Algorithms"
+alias csr="cd ~/Courseras"
+# copy files for marking
+alias 2mr="cp *.java ~/Codes/curr_marking/src"
+# clean IntelliJ marker
+alias clcm="rm ~/Codes/curr_marking/src/*.java"
+
+# clean all in Downloads
+
+alias cldl="rm -r ~/Downloads/*"
+
+# quicker unzip
+
+alias uz="unzip"
+
+# another test func
+
+tst()
+{
+    # clean the testing enviroment
+    rm ~/Codes/curr_marking/src/*.java
+    # move all current java files to the testing enviroment
+    cp *.java ~/Codes/curr_marking/src/
+}
+
+
+# test func
+
+pmr()
+{
+    rm ~/Codes/curr_marking/src/*.java
+    unzip $1 
+    OFF=$(basename $1 .zip)
+    if [ -e $OFF ]
+    then
+        if [ -d $OFF ]
+        then
+            mv $OFF/*.java ~/Codes/curr_marking/src/
+        fi
+    else
+        mv *.java ~/Codes/curr_marking/src/
+    fi
+    rm $1
+    rm -r $OFF
+}
