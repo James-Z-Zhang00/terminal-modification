@@ -14,3 +14,21 @@ The bash terminal custom and self-developed commands to simplify daily use
 Live time and current file path with different colors
 
 <img width="724" alt="Screen Shot 2024-05-15 at 10 04 56 AM" src="https://github.com/James-Z-Zhang00/terminal-customization/assets/144994336/a26f5c32-8796-4eda-a28b-ecff351326cc">
+
+## Load Associative Files
+
+```bash
+source ~/.profile
+if [ -f ~/.bashalias ]; then
+   source ~/.bashalias
+fi
+
+if [ -f ~/.bashtp ]; then
+   source ~/.bashtp
+fi
+
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
+```
+
